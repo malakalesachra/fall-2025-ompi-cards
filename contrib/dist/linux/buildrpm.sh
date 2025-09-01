@@ -253,7 +253,7 @@ echo "--> Found specfile: $specfile"
 #
 # try to find Libfabric lib subir
 #
-if test -n $libfabric_path; then
+if test -n "$libfabric_path"; then
     # does lib64 exist?
     if test -d $libfabric_path/lib64; then
         # yes, so I will use lib64 as include dir
@@ -393,7 +393,7 @@ if test "$FC" != ""; then
     configure_options="$configure_options FC=$FC"
 fi
 
-#
+
 # Make the SRPM
 #
 
@@ -472,3 +472,4 @@ The spec files are located in:       $rpmtopdir/SPECS/
 ------------------------------------------------------------------------------
 
 EOF
+
